@@ -1,0 +1,5 @@
+<launch>
+<node pkg="mav_trajectory_generation_ros" type="dynamic_traj_pub" name="dynamic_traj_pub" clear_params="true" output="screen">
+		<rosparam file="$(find mav_trajectory_generation_ros)/param/points.yaml" />
+</node>
+</launch>

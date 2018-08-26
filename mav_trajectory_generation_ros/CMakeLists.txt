@@ -38,6 +38,11 @@ cs_add_executable(static_traj_pub
 )
 target_link_libraries(static_traj_pub ${PROJECT_NAME})
 
+cs_add_executable(dynamic_traj_pub
+  src/dynamic_traj_pub.cpp
+)
+target_link_libraries(dynamic_traj_pub ${PROJECT_NAME})
+
 #########
 # TESTS #
 #########
