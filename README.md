@@ -388,3 +388,6 @@ if(!feasibility_check.checkHalfPlaneFeasibility(segment)) {
   std::cout << "The segment is not inside the box." << std::endl;
 }
 ```
+
+## Notes
+Have to clone the catkin_simple repo(https://github.com/catkin/catkin_simple) into the same workspace before building to avoid errors.
