@@ -33,6 +33,11 @@ cs_add_executable(time_evaluation_node
 )
 target_link_libraries(time_evaluation_node ${PROJECT_NAME})
 
+cs_add_executable(static_traj_pub
+  src/static_traj_pub.cpp
+)
+target_link_libraries(static_traj_pub ${PROJECT_NAME})
+
 #########
 # TESTS #
 #########
