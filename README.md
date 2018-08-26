@@ -391,11 +391,11 @@ if(!feasibility_check.checkHalfPlaneFeasibility(segment)) {
 
 # Extras
 
-##Additions
+## Additions
 
 Use roslaunch roslaunch '''mav_trajectory_generation_ros dynamic_traj_pub.launch''' to launch the node.
 Launch rviz using '''rosrun rviz rviz''' and click on "add", then "By Topic" and then "PoseArray" to visualize the trajectory.
 Then use '''rosparam set /dynamic_traj_pub/z_2 1''' , etc to reset roparam and see changes in the rviz window.
 
-##Build errors
+## Build errors
 Clone the catkin_simple repo(https://github.com/catkin/catkin_simple) into the same workspace before building to avoid errors.
