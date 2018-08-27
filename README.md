@@ -1,3 +1,16 @@
+# Extras
+
+## Additions
+
+Added a new node which publishes a minimum snap trajectory through 5 points, whose coordinates can be set using rosparams.
+
+Use roslaunch roslaunch '''mav_trajectory_generation_ros dynamic_traj_pub.launch''' to launch the node.
+Launch rviz using '''rosrun rviz rviz''' and click on "add", then "By Topic" and then "PoseArray" to visualize the trajectory.
+Then use '''rosparam set /dynamic_traj_pub/z_2 1''' , etc to reset roparam and see changes in the rviz window.
+
+## Build errors
+Clone the catkin_simple repo(https://github.com/catkin/catkin_simple) into the same workspace before building to avoid errors.
+
 # mav_trajectory_generation
 This repository contains tools for polynomial trajectory generation and optimization based on methods described in [1].
 These techniques are especially suitable for rotary-wing micro aerial vehicles (MAVs).
@@ -388,14 +401,3 @@ if(!feasibility_check.checkHalfPlaneFeasibility(segment)) {
   std::cout << "The segment is not inside the box." << std::endl;
 }
 ```
-
-# Extras
-
-## Additions
-
-Use roslaunch roslaunch '''mav_trajectory_generation_ros dynamic_traj_pub.launch''' to launch the node.
-Launch rviz using '''rosrun rviz rviz''' and click on "add", then "By Topic" and then "PoseArray" to visualize the trajectory.
-Then use '''rosparam set /dynamic_traj_pub/z_2 1''' , etc to reset roparam and see changes in the rviz window.
-
-## Build errors
-Clone the catkin_simple repo(https://github.com/catkin/catkin_simple) into the same workspace before building to avoid errors.
