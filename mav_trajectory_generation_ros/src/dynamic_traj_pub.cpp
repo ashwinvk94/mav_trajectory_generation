@@ -60,7 +60,7 @@ int main(int argc, char **argv)
     {   
 
         float x_1,y_1,z_1;
-        n.getParam("//dynamic_traj_pub/x_1", x_1);
+        n.getParam("/dynamic_traj_pub/x_1", x_1);
         n.getParam("/dynamic_traj_pub/y_1", y_1);
         n.getParam("/dynamic_traj_pub/z_1", z_1);
 
