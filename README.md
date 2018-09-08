@@ -62,7 +62,7 @@ sudo apt-get install python-wstool python-catkin-tools ros-indigo-cmake-modules 
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
 catkin init
-catkin config --extend /opt/ros/indigo
+catkin config --extend /opt/ros/kinetic
 catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
 catkin config --merge-devel
 ```
@@ -72,7 +72,7 @@ catkin config --merge-devel
 ```
 cd src
 wstool init
-wstool set --git mav_trajectory_generation git@github.com:ethz-asl/mav_trajectory_generation.git -y
+wstool set --git mav_trajectory_generation https://github.com/ethz-asl/mav_trajectory_generation.git -y
 wstool update
 wstool merge mav_trajectory_generation/install/mav_trajectory_generation.rosinstall
 wstool update -j8
