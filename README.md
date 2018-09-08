@@ -74,7 +74,7 @@ cd src
 wstool init
 wstool set --git mav_trajectory_generation https://github.com/ethz-asl/mav_trajectory_generation.git -y
 wstool update
-wstool merge mav_trajectory_generation/install/mav_trajectory_generation.rosinstall
+wstool merge mav_trajectory_generation/install/mav_trajectory_generation_https.rosinstall
 wstool update -j8
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
