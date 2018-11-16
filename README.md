@@ -2,7 +2,7 @@
 
 ## Additions
 
-Added a new node which publishes a minimum snap trajectory through 5 points, whose coordinates can be set using rosparams.
+Added a node which publishes a minimum snap trajectory through 5 points, whose coordinates can be set using rosparams.
 
 Use roslaunch roslaunch '''mav_trajectory_generation_ros dynamic_traj_pub.launch''' to launch the node.
 Launch rviz using '''rosrun rviz rviz''' and click on "add", then "By Topic" and then "PoseArray" to visualize the trajectory.
